@@ -1,0 +1,24 @@
+@media (max-width: 1300px) {
+
+	/* Header */
+	header, .lang{
+		display: none;
+	}
+
+
+	/* Intro */
+	.intro__inner {
+		flex-wrap: wrap;
+	}
+
+	.name {
+		display: block;
+	}
+
+	.intro__img img{
+		background: url('../img/denis-bc-phone.png') 
+		no-repeat center / cover;;
+		
+	}
+	
+}
