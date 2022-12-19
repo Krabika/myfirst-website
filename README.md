@@ -1,3 +1,3 @@
-# Myfirst-website
+## Myfirst-website
 
-##Hello
+-This is a simple HTML and CSS page
