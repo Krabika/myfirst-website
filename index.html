@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<link rel='stylesheet' href='css/style.css'>
+	<link rel='stylesheet' href='css/media.css'>
+	<meta name='viewport' content="width=device-width, initial-scale=1">
+
+	<title>Denis Novik</title>
+</head>
+<body>
+
+	<!-- Sprite -->
+	<svg style='display: none;'>
+		<symbol id='stars' viewBox='0 0 22 20'>
+			<g>
+				<path d="M9.98738 0.85958C10.2872 -0.0606967 11.5891 -0.0606959 11.889 0.859581L13.6401 6.23398C13.7742 6.64561 14.158 6.92418 14.5909 6.92418H20.2516C21.221 6.92418 21.6234 8.16521 20.8384 8.73398L16.2635 12.0486C15.912 12.3033 15.7649 12.7555 15.8994 13.1682L17.648 18.5349C17.948 19.4557 16.8947 20.2227 16.1105 19.6544L11.5249 16.3321C11.1749 16.0784 10.7015 16.0784 10.3515 16.3321L5.76592 19.6544C4.98166 20.2227 3.92837 19.4557 4.2284 18.5348L5.97697 13.1682C6.11142 12.7555 5.96434 12.3033 5.61288 12.0486L1.03801 8.73398C0.253002 8.16521 0.655333 6.92418 1.62473 6.92418H7.28548C7.71841 6.92418 8.10217 6.64561 8.23629 6.23398L9.98738 0.85958Z"/>
+			</g>
+		</symbol>
+		<symbol id='linkedin' viewBox="0 0 310 310">
+			<g>
+				<path d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73
+					C77.16,101.969,74.922,99.73,72.16,99.73z"/>
+				<path d="M41.066,0.341C18.422,0.341,0,18.743,0,41.362C0,63.991,18.422,82.4,41.066,82.4
+					c22.626,0,41.033-18.41,41.033-41.038C82.1,18.743,63.692,0.341,41.066,0.341z"/>
+				<path d="M230.454,94.761c-24.995,0-43.472,10.745-54.679,22.954V104.73c0-2.761-2.238-5-5-5h-59.599
+					c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5h62.097c2.762,0,5-2.238,5-5v-98.918c0-33.333,9.054-46.319,32.29-46.319
+					c25.306,0,27.317,20.818,27.317,48.034v97.204c0,2.762,2.238,5,5,5H305c2.762,0,5-2.238,5-5V194.995
+					C310,145.43,300.549,94.761,230.454,94.761z"/>
+			</g>
+		</symbol>
+		<symbol id='instagram' viewBox="0 0 32 32">
+			<g>
+				<path d="M16 0c-4.349 0-4.891 0.021-6.593 0.093-1.709 0.084-2.865 0.349-3.885 0.745-1.052 0.412-1.948 0.959-2.833 1.849-0.891 0.885-1.443 1.781-1.849 2.833-0.396 1.020-0.661 2.176-0.745 3.885-0.077 1.703-0.093 2.244-0.093 6.593s0.021 4.891 0.093 6.593c0.084 1.704 0.349 2.865 0.745 3.885 0.412 1.052 0.959 1.948 1.849 2.833 0.885 0.891 1.781 1.443 2.833 1.849 1.020 0.391 2.181 0.661 3.885 0.745 1.703 0.077 2.244 0.093 6.593 0.093s4.891-0.021 6.593-0.093c1.704-0.084 2.865-0.355 3.885-0.745 1.052-0.412 1.948-0.959 2.833-1.849 0.891-0.885 1.443-1.776 1.849-2.833 0.391-1.020 0.661-2.181 0.745-3.885 0.077-1.703 0.093-2.244 0.093-6.593s-0.021-4.891-0.093-6.593c-0.084-1.704-0.355-2.871-0.745-3.885-0.412-1.052-0.959-1.948-1.849-2.833-0.885-0.891-1.776-1.443-2.833-1.849-1.020-0.396-2.181-0.661-3.885-0.745-1.703-0.077-2.244-0.093-6.593-0.093zM16 2.88c4.271 0 4.781 0.021 6.469 0.093 1.557 0.073 2.405 0.333 2.968 0.553 0.751 0.291 1.276 0.635 1.844 1.197 0.557 0.557 0.901 1.088 1.192 1.839 0.22 0.563 0.48 1.411 0.553 2.968 0.072 1.688 0.093 2.199 0.093 6.469s-0.021 4.781-0.099 6.469c-0.084 1.557-0.344 2.405-0.563 2.968-0.303 0.751-0.641 1.276-1.199 1.844-0.563 0.557-1.099 0.901-1.844 1.192-0.556 0.22-1.416 0.48-2.979 0.553-1.697 0.072-2.197 0.093-6.479 0.093s-4.781-0.021-6.48-0.099c-1.557-0.084-2.416-0.344-2.979-0.563-0.76-0.303-1.281-0.641-1.839-1.199-0.563-0.563-0.921-1.099-1.197-1.844-0.224-0.556-0.48-1.416-0.563-2.979-0.057-1.677-0.084-2.197-0.084-6.459 0-4.26 0.027-4.781 0.084-6.479 0.083-1.563 0.339-2.421 0.563-2.979 0.276-0.761 0.635-1.281 1.197-1.844 0.557-0.557 1.079-0.917 1.839-1.199 0.563-0.219 1.401-0.479 2.964-0.557 1.697-0.061 2.197-0.083 6.473-0.083zM16 7.787c-4.541 0-8.213 3.677-8.213 8.213 0 4.541 3.677 8.213 8.213 8.213 4.541 0 8.213-3.677 8.213-8.213 0-4.541-3.677-8.213-8.213-8.213zM16 21.333c-2.948 0-5.333-2.385-5.333-5.333s2.385-5.333 5.333-5.333c2.948 0 5.333 2.385 5.333 5.333s-2.385 5.333-5.333 5.333zM26.464 7.459c0 1.063-0.865 1.921-1.923 1.921-1.063 0-1.921-0.859-1.921-1.921 0-1.057 0.864-1.917 1.921-1.917s1.923 0.86 1.923 1.917z"/>
+			</g>
+		</symbol>
+		<symbol id='behance' viewBox='0 0 32 32'>
+			<g>
+				<path d="M 1 6.75 L 1 25.25 L 9.9375 25.25 C 10.765625 25.25 16.46875 25.082031 16.46875 19.875 C 16.46875 16.621094 14.230469 15.515625 13.09375 15.1875 C 13.929688 14.792969 15.59375 13.855469 15.59375 11.34375 C 15.59375 9.945313 15.394531 6.75 9.6875 6.75 Z M 21.375 8.46875 L 21.375 10.15625 L 28.28125 10.15625 L 28.28125 8.46875 Z M 5.0625 9.90625 L 8.875 9.90625 C 9.234375 9.90625 11.65625 9.714844 11.65625 12.03125 C 11.65625 14.011719 9.90625 14.21875 9.1875 14.21875 L 5.0625 14.21875 Z M 25 11.6875 C 19.777344 11.6875 18.6875 16.222656 18.6875 18.1875 C 18.6875 24.019531 23.46875 24.6875 25 24.6875 C 29.128906 24.6875 30.300781 22.015625 30.78125 20.53125 L 27.78125 20.53125 C 27.664063 20.914063 26.789063 22.15625 25.125 22.15625 C 22.335938 22.15625 22.09375 19.976563 22.09375 19 L 30.96875 19 C 31.148438 15.625 29.671875 11.6875 25 11.6875 Z M 24.90625 14.21875 C 25.738281 14.21875 26.410156 14.460938 26.8125 14.90625 C 27.214844 15.355469 27.511719 16.011719 27.59375 16.875 L 22.09375 16.875 C 22.109375 16.636719 22.164063 16.363281 22.25 16.0625 C 22.335938 15.753906 22.46875 15.460938 22.6875 15.1875 C 22.90625 14.917969 23.210938 14.683594 23.5625 14.5 C 23.921875 14.3125 24.367188 14.21875 24.90625 14.21875 Z M 5.0625 17 L 9.46875 17 C 10.34375 17 12.40625 17.136719 12.40625 19.65625 C 12.40625 22.097656 9.808594 22.09375 9.40625 22.09375 L 5.0625 22.09375 Z"/>
+			</g>
+		</symbol>
+		<symbol id='dribbble' viewBox='0 0 32 32'>
+			<g><path d="M16 32c-8.817 0-16-7.183-16-16s7.183-16 16-16c8.817 0 16 7.183 16 16s-7.183 16-16 16zM29.495 18.188c-0.468-0.147-4.229-1.271-8.516-0.584 1.787 4.912 2.516 8.912 2.657 9.745 3.067-2.073 5.249-5.36 5.859-9.161zM21.339 28.599c-0.203-1.197-1-5.375-2.917-10.359l-0.088 0.025c-7.719 2.688-10.479 8.037-10.719 8.537 2.303 1.807 5.224 2.885 8.385 2.885 1.891 0 3.693-0.385 5.333-1.084zM5.849 25.161c0.307-0.536 4.057-6.74 11.109-9.021 0.177-0.061 0.359-0.113 0.536-0.161-0.344-0.781-0.719-1.557-1.109-2.317-6.823 2.036-13.443 1.953-14.041 1.937l-0.005 0.417c0 3.511 1.328 6.719 3.511 9.14zM2.62 13.219c0.615 0.011 6.244 0.036 12.635-1.661-2.265-4.027-4.708-7.412-5.067-7.907-3.824 1.803-6.677 5.323-7.568 9.563zM12.803 2.735c0.375 0.511 2.859 3.885 5.093 8 4.859-1.817 6.921-4.584 7.167-4.932-2.417-2.152-5.589-3.448-9.063-3.448-1.099 0-2.172 0.129-3.197 0.38zM26.579 7.38c-0.287 0.385-2.579 3.323-7.631 5.385 0.317 0.656 0.625 1.313 0.907 1.984 0.109 0.24 0.197 0.48 0.291 0.704 4.548-0.573 9.068 0.349 9.521 0.443-0.027-3.229-1.172-6.188-3.079-8.511z"/>
+			</g>
+		</symbol>
+	</svg>
+
+	<header>
+		<div class="container">
+			<div class="nav">
+				<a href="#" class="nav__link">Home</a>
+				<a href="#" class="nav__link">About me</a>
+				<a href="#" class="nav__link">Skills</a>
+				<a href="#" class="nav__link">Portfolio</a>
+				<a href="#" class="nav__link">Contacts</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="intro">
+		<div class="container">
+			<div class="intro__inner">
+				<h1 class="name">denis novik</h1>
+				<h3 class="work__den">UX | UI designer<br> 24 years old, Minsk</h3>
+				<p class="lang"><span>ru</span> | eng</p>
+			</div>
+			<div class="intro__img">
+				<img src="img/denis-bc.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<div class="about__me">
+		<div class="me__text">	
+			<h1 class="me__title">About me</h1>
+			<div class="me__subtitle">
+				<p>Hi, I'm Denis – UX/UI designer from Minsk.<br>
+				I'm interested in design and everything connected with it.</p>
+
+				<p>I'm studying at courses "Web and mobile design<br> 
+				interfaces" in IT-Academy.</p>
+
+				<p>Ready to implement excellent projects<br>
+				 with wonderful people.</p>
+			</div>
+		</div>
+	</div>	
+
+	<div class="skills">
+		<div class="container">
+			<div class="skills__inner">
+					<div class="skill__title">Skills</div>
+					<div class="skill__work">I work in such programs as</div>
+					<div class="skill__programms">
+						<div class="program">
+							<div class="program-icon">
+								<img src="img/adobe-icons/icon-Photoshop.jpg">
+							</div>
+							<p class="program-text">Adobe<br>Photoshop</p>
+							<div class="ratings">
+								<svg class="star__icon star__black">
+									<use xlink:href='#stars'>
+								</svg>
+								<svg class="star__icon star__black">
+									<use xlink:href='#stars'>
+								</svg>
+								<svg class="star__icon star__black">
+									<use xlink:href='#stars'>
+								</svg>
+								<svg class="star__icon star__black">
+									<use xlink:href='#stars'>
+								</svg>
+								<svg class="star__icon star__grey">
+									<use xlink:href='#stars'>
+								</svg>
+							</div>
+						</div>
+						<div class="program">
+							<div class="program-icon">
+								<img src="img/adobe-icons/icon-illustrator.jpg">
+							</div>
+							<p class="program-text">Adobe<br>illustrator</p>
+							<div class="ratings">
+								<svg class="star__icon star__black">
+									<use xlink:href='#stars'>
+								</svg>
+								<svg class="star__icon star__black">
+									<use xlink:href='#stars'>
+								</svg>
+								<svg class="star__icon star__black">
+									<use xlink:href='#stars'>
+								</svg>
+								<svg class="star__icon star__grey">
+									<use xlink:href='#stars'>
+								</svg>
+								<svg class="star__icon star__grey">
+									<use xlink:href='#stars'>
+								</svg>
+							</div>
+						</div>
+						<div class="program">
+							<div class="program-icon">
+								<img src="img/adobe-icons/icon-Effects.jpg">
+							</div>
+							<p class="program-text">Adobe<br>After Effects</p>
+							<div class="ratings">
+								<svg class="star__icon star__black">
+									<use xlink:href='#stars'>
+								</svg>
+								<svg class="star__icon star__black">
+									<use xlink:href='#stars'>
+								</svg>
+								<svg class="star__icon star__black">
+									<use xlink:href='#stars'>
+								</svg>
+								<svg class="star__icon star__black">
+									<use xlink:href='#stars'>
+								</svg>
+								<svg class="star__icon star__grey">
+									<use xlink:href='#stars'>
+								</svg>
+							</div>
+						</div>
+						<div class="program">
+							<div class="program-icon">
+								<img src="img/adobe-icons/figma.jpg">
+							</div>
+							<p class="program-text">Adobe<br>Figma</p>
+							<div class="ratings">
+								<svg class="star__icon star__black">
+									<use xlink:href='#stars'></use>
+								</svg>
+								<svg class="star__icon star__black">
+									<use xlink:href='#stars'></use>
+								</svg>
+								<svg class="star__icon star__black">
+									<use xlink:href='#stars'></use>
+								</svg>
+								<svg class="star__icon star__black">
+									<use xlink:href='#stars'></use>
+								</svg>
+								<svg class="star__icon star__grey">
+									<use xlink:href='#stars'></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					
+			</div>
+		</div>
+	</div>
+
+	<div class="portfolio">
+		<h1>Portfolio</h1>
+		<div class="sites">		
+			<div class="site">
+				<img src="img/portfolio/woman.png" alt="" class="img__site">
+				<a href="#" class="site__links">Online fashion store - Homepage</a>	
+			</div>
+
+			<div class="site">
+				<img src="img/portfolio/laki-man.png" alt="" class="img__site">
+				<a href="#" class="site__links">Reebok Store - Concept</a>	
+			</div>
+
+			<div class="site">
+				<img src="img/portfolio/camera.png" alt="" class="img__site">
+				<a href="#" class="site__links">Braun Landing Page - Concept</a>	
+			</div>
+
+		</div>
+	</div>
+
+	<div class="contacts">
+		<h1>Contacts</h1>
+		<h3>Want to know more or just chat?<br> You are welcome!</h3>
+		<a href="#" class="btn btn--end">Send message</a>
+		<div class="social">
+			<a href="#" class="social__item">
+				<svg class="social__ico">
+					<use xlink:href='#linkedin'><use/>
+				</svg>
+			</a>
+			<a href="#" class="social__item-nob">
+				<svg class="social__icon-nob">
+					<use xlink:href='#instagram'><use/>
+				</svg>
+			</a>
+			<a href='#' class='social__item'>
+				<svg class='social__icon border--icon'>
+					<use xlink:href='#behance'></use>
+				</svg>
+			</a>
+			<a href='#' class="social__item">
+				<svg class='social__icon'>
+					<use xlink:href='#dribbble'><use>
+				</svg>
+			</a>
+		</div>
+		<h4 class='copyright'>Like me on<br> LinkedIn, Instagram, Behance, Dribble<h4>
+	</div>
+
+</body>
+</html>
